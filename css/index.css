@@ -33,7 +33,7 @@ nav{
     left: 916px;
     display: flex;
     align-items: center;
-    column-gap: 30px;
+    column-gap: 20px;
     font-family: Manrope;
     color: var(--clr-black);   
 }
@@ -42,7 +42,7 @@ nav ul{
     display: flex;
     align-items: center;
     column-gap: 70px;
-    padding: 5px 40px 5px 0;
+    padding: 5px 20px 5px 0;
     font-size: 1rem;
     border-right: 1px solid #939191;
 }
@@ -91,7 +91,7 @@ main .main-container .main-left{
 
 main .main-container .main-left .first-text{
     width: 80%;
-    font-size: 20px;
+    font-size: 17px;
     color: var(--clr-black);
     margin-top: 70px;
     font-family: Manrope;
@@ -151,14 +151,14 @@ main .main-container .main-right{
 .service{
     position: absolute;
     width: 540px;
-    left: -25%;
+    left: -30%;
     top: -10%;
 }
 
 .rating{
     position: absolute;
     width: 480px;
-    right: -19%;
+    right: -22%;
     bottom: -18%;
 }
 
