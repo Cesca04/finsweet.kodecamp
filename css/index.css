@@ -41,8 +41,7 @@ nav{
 nav ul{
     display: flex;
     align-items: center;
-    column-gap: 45
-    px;
+    column-gap: 45px;
     padding: 5px 20px 5px 0;
     font-size: 1rem;
     border-right: 1px solid #939191;
