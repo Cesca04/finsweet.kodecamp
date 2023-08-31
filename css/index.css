@@ -9,6 +9,7 @@
     --clr-white: #FFFFFF;
     --clr-black: #1E1B1B;
     --clr-grey: #939191;
+    --clr-blue: #5CBA99;
 }
 
 header{
@@ -18,7 +19,9 @@ header{
     justify-content: space-between;
     align-items: center;
     margin: auto;
-    padding: 14px 10px; 
+    padding-bottom: 14px;
+    padding-top: 14px;
+    /* box-shadow: .5px .5px 3px var(--clr-blue) inset ;  */
 }
 
 .logo{
@@ -55,7 +58,7 @@ nav ul li{
     display: flex;
     justify-content: space-between;
     text-align: center;
-    column-gap: 10px;
+    column-gap: 15px;
 }
 
 .header-text p{
@@ -79,7 +82,8 @@ main{
 .main-container{
     width: 100%;
     height: 80%;
-    display: flex; 
+    display: flex;
+    background-color: var(--clr-white); 
 }
 
 main .main-container .main-left{
@@ -90,23 +94,22 @@ main .main-container .main-left{
 }
 
 main .main-container .main-left .first-text{
-    width: 80%;
-   
+    width: 100%;
     color: var(--clr-black);
-    margin-top: 70px;
+    margin-top: 60px;
     font-family: Manrope;
-    font-size: 22px;
+    font-size: 26px;
     font-weight: 200;
-    line-height: 55px;
+    line-height: 70px;
     letter-spacing: -0.01em;
     text-align: left;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 button{
-    margin-top: 15px;
+    margin-top: 8px;
     width: 150px;
-    margin-bottom: 20px;
+    margin-bottom: 8px;
     outline: none;
     border: none;
     cursor: pointer;
@@ -132,7 +135,8 @@ button{
 }
 
 .last-text p{
-    padding: 2px;    
+    padding: 2px;
+    font-size: 12px;    
 }
 
 .grey{
@@ -140,26 +144,27 @@ button{
 }
 
 main .main-container .main-right{
-    width: 50%;
+    width: 40%;
     background-image: url(../images/image.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    position: relative;    
+    position: relative; 
+    margin-left: auto;   
 }
 
 .service{
     position: absolute;
-    width: 500px;
+    width: 400px;
     left: -30%;
-    top: -15%;
+    top: -3%;
 }
 
 .rating{
     position: absolute;
-    width: 500px;
+    width: 400px;
     right: -25%;
-    bottom: -22%;
+    bottom: -15%;
 }
 
 
