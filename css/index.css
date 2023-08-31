@@ -33,7 +33,7 @@ nav{
     left: 916px;
     display: flex;
     align-items: center;
-    column-gap: 20px;
+    column-gap: 30px;
     font-family: Manrope;
     color: var(--clr-black);   
 }
@@ -41,8 +41,8 @@ nav{
 nav ul{
     display: flex;
     align-items: center;
-    column-gap: 40px;
-    padding: 5px 20px 5px 0;
+    column-gap: 70px;
+    padding: 5px 40px 5px 0;
     font-size: 1rem;
     border-right: 1px solid #939191;
 }
@@ -55,7 +55,7 @@ nav ul li{
     display: flex;
     justify-content: space-between;
     text-align: center;
-    column-gap: 5px;
+    column-gap: 10px;
 }
 
 .header-text p{
@@ -93,9 +93,9 @@ main .main-container .main-left .first-text{
     width: 80%;
     font-size: 20px;
     color: var(--clr-black);
-    margin-top: 50px;
+    margin-top: 70px;
     font-family: Manrope;
-    font-size: 22px;
+    font-size: 26px;
     font-weight: 200;
     line-height: 55px;
     letter-spacing: -0.01em;
@@ -145,21 +145,21 @@ main .main-container .main-right{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    position: relative;
+    position: relative;    
 }
 
 .service{
     position: absolute;
-    width: 480px;
-    left: -30%;
-    top: -16%;
+    width: 540px;
+    left: -25%;
+    top: -10%;
 }
 
 .rating{
     position: absolute;
     width: 480px;
-    right: -25%;
-    bottom: -22%;
+    right: -19%;
+    bottom: -18%;
 }
 
 
