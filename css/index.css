@@ -44,7 +44,7 @@ nav{
 nav ul{
     display: flex;
     align-items: center;
-    column-gap: 45px;
+    column-gap: 30px;
     padding: 5px 20px 5px 0;
     font-size: 1rem;
     border-right: 1px solid #939191;
@@ -144,7 +144,7 @@ button{
 }
 
 main .main-container .main-right{
-    width: 40%;
+    width: 45%;
     background-image: url(../images/image.png);
     background-position: center;
     background-size: cover;
@@ -156,14 +156,14 @@ main .main-container .main-right{
 .service{
     position: absolute;
     width: 400px;
-    left: -30%;
+    left: -25%;
     top: -3%;
 }
 
 .rating{
     position: absolute;
     width: 400px;
-    right: -25%;
+    right: -23%;
     bottom: -15%;
 }
 
