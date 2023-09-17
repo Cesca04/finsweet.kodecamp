@@ -543,13 +543,13 @@ form{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: var(--clr-lightgrey);
 }
 
 #experience-page .experience-rating #central-div{
     width: 65%;
     margin: auto;
 }
-
 
 #experience-page .experience-rating #central-div .text-blue{
     font-size: 2.5rem;
