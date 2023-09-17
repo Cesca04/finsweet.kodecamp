@@ -413,7 +413,7 @@ form{
 }
 
 .content-center .h1{
-        width: 50%;
+        width: 48%;
         margin: auto;
         font-size: 1.2rem;
         margin-top: 10px;
@@ -421,16 +421,18 @@ form{
 .content-center h5{
         padding-top: 7%;
 }
+.content-center #flexbox-cta-container{
+    width: 40.5rem;
+    margin: auto;
 
+}
 .content-center .flex-box{
     display: flex;
     flex-wrap: wrap;
-    gap: 0.2rem;
+    row-gap: 0.1rem;
     margin: auto;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    width: 42rem;
-    height: 20rem;
     margin-top: 3%;
 }
 
@@ -469,7 +471,7 @@ form{
 .footer-offer-page{
     font-size: 0.6rem;
     text-align: right;
-    width: 80%;
+ 
     display: flex;
     justify-content: flex-end;
     align-items: center;
