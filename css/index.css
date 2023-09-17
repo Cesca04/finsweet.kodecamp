@@ -479,18 +479,26 @@ form{
 }
 
 /* styling the fifth section(class=experience-page) */
+#experience-page{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
 #experience-page .experience-container{
     width: 100%;
-    height: 50vh;
-    background-color: #FF6433;
+    height: 60vh;
     display: flex;
-    justify-content: space-between;
+
     align-items: center;
 }
 
 #experience-page .experience-container .experience-left-page{
     width: 50%;
-    height: 50vh;
+    height: 60vh;
     background-image: url(../images/Image\ 1.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -501,7 +509,7 @@ form{
     width: 70%;
     background-color: var(--clr-orange);
     color: #FFFFFF;
-    height: 50vh;
+    height: 60vh;
     margin-left: 30%;
     padding-left: 10%;
     display: flex;
@@ -522,9 +530,28 @@ form{
 
 #experience-page .experience-container .experience-right-page{
     width: 50%;
-    height: 50vh;
+    height: 60vh;
     background-image: url(../images/ovGrEUgrkyE.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+
+#experience-page .experience-rating{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#experience-page .experience-rating #central-div{
+    width: 65%;
+    margin: auto;
+}
+
+
+#experience-page .experience-rating #central-div .text-blue{
+    font-size: 2.5rem;
+    color: var(--clr-bluee);
 }
