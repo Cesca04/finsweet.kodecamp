@@ -48,17 +48,15 @@ nav{
     display: flex;
     align-items: center;
     column-gap: 1.5em;
-    font-family: Manrope;
     color: var(--clr-black);   
 }
 
-nav ul{
+nav ul{  
     display: flex;
     align-items: center;
-    column-gap: 30px;
-    padding: 5px 20px 5px 0;
-    font-size: 1rem;
-    border-right: 1px solid #939191;
+    column-gap: 2em;
+    padding: 0.5rem 1rem 0.5rem 0;
+    border-right: 0.05rem solid #939191;
 }
 
 nav ul li{
@@ -68,20 +66,20 @@ nav ul li{
 }
 
 nav ul li:hover, .header-text #p:hover{
-    font-size: 18px;
+    font-size: 1.05rem;
     background-color: whitesmoke;
 }
 
 .header-contact{
     display: flex;
     justify-content: space-between;
-    text-align: center;
-    column-gap: 15px;
+    align-items: center;
+    column-gap: 1em;
 }
 
 .header-text p{
-    font-size: 12px;
-    line-height: 18px;
+    font-size: 0.7em;
+    line-height: 1.3em;
     text-align: left;
 }
 
@@ -111,32 +109,27 @@ nav ul li:hover, .header-text #p:hover{
 .section-eighty-width .section-container .section-left .first-text{
     width: 100%;
     color: var(--clr-black);
-    margin-top: 60px;
-    font-family: Manrope;
-    font-size: 26px;
-    font-weight: 200;
-    line-height: 70px;
+    margin-top: 3.75em;
+    font-size: 2em;
+    line-height: 2.375em;
     letter-spacing: -0.01em;
-    text-align: left;
-    margin-bottom: 10px;
+    margin-bottom: 0.625em;
 }
 
 .button{
-    margin-top: 8px;
-    width: 150px;
-    margin-bottom: 8px;
+    margin: 0.4em 0;
+    width: 9.4rem;
     outline: none;
     border: none;
     cursor: pointer;
     color: var(--clr-white);
-    font-weight: 200;
-    border-radius: 8px;
+    border-radius: 0.5em;
     background-color: var(--clr-orange);
-    padding: 15px;
+    padding: 1em;
 }
 
 .button:hover{
-    width: 200px;
+    width: 10em;
     background-color: var(--clr-blue);
     color: var(--clr-black);
 }
@@ -150,14 +143,13 @@ nav ul li:hover, .header-text #p:hover{
 
 .last-text{
     display: flex;
-    column-gap: 10px;
-    margin-top: 20px;
-    font-family: Manrope; 
+    column-gap: 0.63em;
+    margin-top: 1.25em;
 }
 
 .last-text p{
-    padding: 2px;
-    font-size: 12px;    
+    padding: 0.125em;
+    font-size: 0.75em;    
 }
 
 .grey{
@@ -185,15 +177,14 @@ nav ul li:hover, .header-text #p:hover{
     width: 50%;
     right: -5%;
     bottom: 5%;
-    border-radius: 60px;
+    border-radius: 3.75em;
     background-color: #FFFFFF;
     outline: none;
     border: none;
     cursor: pointer;
     color: var(--clr-black);
-    font-weight: lighter;
-    box-shadow: 0px 1px 1px 0px #6D6C731F inset;
-    border: 10px solid #6D6C731F
+    box-shadow: 0em 0.06em 0.06em 0em #6D6C731F inset;
+    border: 0.625em solid #6D6C731F
 }
 
 .rating-button:hover, .service-button:hover {
@@ -206,13 +197,14 @@ nav ul li:hover, .header-text #p:hover{
     justify-content: space-between;
     align-items: center;
     justify-content: center;
-    padding: 15px;
-    column-gap: 17px;
-    font-size: 18px;
+    padding: 1em;
+    column-gap: 1em;
+    font-size: 1.3em;
+    font-weight: bold;
 } 
 
 .button-content #small-rating{
-    font-size: 10px;
+    font-size: 0.625em;
     color: var(--clr-grey);
     text-align: left;
 }
@@ -222,15 +214,14 @@ nav ul li:hover, .header-text #p:hover{
     width: 45%;
     left: -5%;
     top: 8%;
-    border-radius: 60px;
+    border-radius: 3.75em;
     background-color: #FFFFFF;
     outline: none;
     border: none;
     cursor: pointer;
     color: var(--clr-black);
-    font-weight: lighter;
-    box-shadow: 0px 1px 1px 0px #6D6C731F inset;
-    border: 10px solid #6D6C731F
+    box-shadow: 0em 0.06em 0.06em 0em #6D6C731F inset;
+    border: 0.625em solid #6D6C731F;
 } 
 
 .service-button .button-content{
@@ -238,12 +229,10 @@ nav ul li:hover, .header-text #p:hover{
     justify-content: space-between;
     align-items: center;
     justify-content: center;
-    padding-top: 10px;
-    padding-bottom: 8px;
-    padding-right: 20px;
-    column-gap: 17px;
-    font-family: Manrope; 
-    font-size: 15px;
+    padding: 0.625em 2.5em 0.5em 0;
+    column-gap: 1em;
+    font-size: 1.05em;
+    font-weight: bold;
 } 
 
 /* styling the second section (id=qoute-page) */
@@ -251,9 +240,8 @@ nav ul li:hover, .header-text #p:hover{
     display: flex;
     justify-content: space-between;
     text-align: center;
-    column-gap: 15px;
-    margin-right: 42%;
-    margin-top: 7%;
+    column-gap: 1em;
+    margin: 7% 42% 0 0;
 }
 
 .section-left .flex-content .left-align{
@@ -290,8 +278,7 @@ nav ul li:hover, .header-text #p:hover{
 .arrow{
     display: flex;
     gap: 1rem;
-    margin-left: 7%;
-    margin-top: 5%;
+    margin: 5% 0 0 7%;
     font-size: 0.7rem;
 }
 
@@ -320,8 +307,7 @@ form{
 }
 
 #offer-page #offer-container .offer-left-text{
-    margin-top: 27px;
-    margin-left: 15%;
+    margin: 1.69em 0 0 5rem;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -331,12 +317,12 @@ form{
 .offer-left-text .offer-content{
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 1.25em;
     margin-top: 4%;
 }
 
 .offer-left-text .offer-content .offer-text{
-    line-height: 20px;
+    line-height: 1.25em;
 }
 
 .offer-left-text .offer-content .offer-text .small-font{
@@ -349,19 +335,19 @@ form{
 .offer-left-text .offer-content .circle{
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 1em;
     align-items: center;
 }
 
 .offer-left-text .offer-content .circle .blue{
     background-color:var(--clr-bluee);
-    padding: 10px;
-    border-radius: 100px; 
+    padding: 0.63em;
+    border-radius: 6em; 
 }
 
 .offer-left-text .offer-content .dots{
-    width: 30px;
-    padding-left: 15px;
+    width: 1.9em;
+    padding-left: 1em;
 }
 
 #offer-page #offer-container #offer-width {
@@ -382,9 +368,7 @@ form{
 
 #offer-page #offer-container .offer-right .p{
     font-size: 0.8rem;
-    margin-right: 20%;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin: 5% 20% 5% 0;
     opacity: 0.4;
 }
 
@@ -416,16 +400,19 @@ form{
         width: 48%;
         margin: auto;
         font-size: 1.2rem;
-        margin-top: 10px;
+        margin-top: 0.625em;
 }
+
 .content-center h5{
         padding-top: 7%;
 }
+
 .content-center #flexbox-cta-container{
     width: 40.5rem;
     margin: auto;
 
 }
+
 .content-center .flex-box{
     display: flex;
     flex-wrap: wrap;
@@ -471,7 +458,6 @@ form{
 .footer-offer-page{
     font-size: 0.6rem;
     text-align: right;
- 
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -484,7 +470,6 @@ form{
     height: 80vh;
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
     align-items: center;
 }
 
@@ -492,7 +477,6 @@ form{
     width: 100%;
     height: 60vh;
     display: flex;
-
     align-items: center;
 }
 
@@ -515,7 +499,7 @@ form{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 20px;
+    gap: 1.25em;
 }
 
 #experience-page .experience-container .experience-left-page .inner-experience-left-page .inner-text{
