@@ -16,6 +16,7 @@
     --clr-black:#1E1B1B;
     
     font-family: Manrope;
+    font-size: 16px;
 }
 
 /* Styling the header */ 
@@ -26,16 +27,14 @@ header{
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    padding-bottom: 14px;
-    padding-top: 14px;
+    padding-bottom: 1em;
+    padding-top: 1em;
     color: var(--clr-black);
     z-index: 50;
     right: 10%;
 }
 
 .logo{
-    top: 31px;
-    left: 320px;
     background:var(--clr-white);
     font-size: 0.7rem; 
 }
@@ -46,11 +45,9 @@ header{
 }
 
 nav{
-    top: 18px;
-    left: 916px;
     display: flex;
     align-items: center;
-    column-gap: 20px;
+    column-gap: 1.5em;
     font-family: Manrope;
     color: var(--clr-black);   
 }
@@ -432,7 +429,8 @@ form{
     margin: auto;
     justify-content: center;
     align-items: center;
-    width: 75%;
+    width: 42rem;
+    height: 20rem;
     margin-top: 3%;
 }
 
