@@ -92,6 +92,7 @@ nav ul li:hover, .header-text #p:hover{
 }
 
 /* styling the first section (id=book-service-page) */
+
 .section-eighty-width{
     height: 100vh;
     width: 100%;
@@ -816,7 +817,7 @@ gap: 2em;
 
 /* MEDIA QUERY */
 /*  MOBILE PHONE view*/
-@media screen and (min-width: 330px ) and (max-width: 430px) {
+@media screen and (min-width: 330px ) and (max-width: 480px) {
     :root{
         font-size: 11px;
     }
@@ -831,6 +832,7 @@ gap: 2em;
     header{
         width: 100%;
         padding-bottom: 0.3em 0.2em;
+        position: static;
     
     }
         
@@ -863,27 +865,27 @@ gap: 2em;
         
     .section-eighty-width{
         width: 100%;
-        height: 100vh;     
+        height: auto;     
     }
     
     .section-eighty-width .section-container{
         width: 90%;
         flex-direction: column;
-        height: 100vh;
+        height: auto;
         justify-content: center;
-        gap: 2em;
+        gap:1em;
     }
     
     .section-eighty-width .section-container .section-left{
         width: 100%;
         padding: 1em; 
         align-items: center;
-        height: 50vh;
+        height: auto;
     
     }
     .section-eighty-width .section-container .section-left .first-text{
-        padding-top: 0%;
-        font-size: 1.8em;
+        padding-top: 0em;
+        font-size: 1.2em;
         text-align: center;
     }
     
@@ -893,13 +895,13 @@ gap: 2em;
     }
     
     .last-text{
-        margin-top: 2em;
-        font-size: 2em;
+        margin-top: 1em;
+        font-size: 1em;
     }
     
     .section-eighty-width .section-container .section-right{
         width: 100%;
-        height: 50vh;
+        height: auto;
         margin-top: 0;
             
     }
@@ -910,14 +912,15 @@ gap: 2em;
     }   
 
     .service-button{
-        width: 12rem;
-        top: 15%;     
+        width: 10rem;
+        top: 5%;     
     }
     
     .service-button .button-content{
-        padding: 1.2em 2em 1.2em 0.5em;
-        column-gap: 0.5em;
-        font-size: 0.65em;
+        padding: 1em 0em;
+        column-gap: 0.2em;
+        font-size: 0.6em;
+        padding-right: 2em;
     }
     
     #twenty-four-hr{
@@ -942,26 +945,27 @@ gap: 2em;
 
     #qoute-page{
         width: 100%;
-        height: 100vh; 
+        height: auto; 
     }
 
     #qoute-page .section-container{
-        height: 100vh;
+        height: auto;
     }
 
     #qoute-page .section-container .section-left{
-        overflow: hidden;
         margin: auto;
-        height: 50vh; 
+        height: auto;
     }
 
     #qoute-page .section-container .section-right{
         margin: auto;
-        height: 50vh;
+        height: auto;
     } 
     
     #qoute-page .section-container .section-right form input{
         width: 100%;
+        font-size: 1em;
+        padding: 1rem;
     }
 
     #quote-media{
@@ -976,13 +980,17 @@ gap: 2em;
     }
     .section-left .flex-content{
         column-gap: 0.5em;
-        margin: 7% 10% 0 0;
-        font-size: 2em;
+        margin: 4% 0 0 0;
+        font-size: 1em;
+    }
 
+    #quote-media h2{
+        padding-top: .5em;
+        font-size: 1.5em;
     }
    
     .light-font{
-        font-size: 1.5rem;  
+        font-size: 1rem;  
     }
 
     .left-align .p{
@@ -990,37 +998,47 @@ gap: 2em;
     }
     
     .flex-content-img{
-        width: 1em;
+        width: 1.7em;
     }
-    
-    #qoute-page .section-container .section-right .shift-down{
-        padding-top: 3em;
+
+    .arrow{
+        margin: .8em 0 0 2.8em;
+        font-size: .8rem;
     }
 
     #qoute-page .section-container .section-right h1{
         text-align: center;
+        font-size: 1.5em;
+    }
+
+    #offer-page{
+        padding: 1em 1em;
+        overflow: hidden;
+        justify-content: space-between;
+        height: auto;
+    }
+    #offer-page #offer-container{
+        margin: auto;
+        gap: 2em;
     }
 
     #offer-page #offer-container #offer-width{
         width: 100%;
         margin: auto;
-
     }
     #offer-page #offer-container .offer-right .inner-offer-right{
         width: 100%;
-        height: 40vh;
     }
 
     #offer-page #offer-container .offer-right #offer-h1{
         text-align: center;
-        padding-top: 10%;
-
+        font-size: 1em;
     }
 
     #offer-page #offer-container .offer-right .p{
         text-align: center;
-        margin: 2em .6em;
-        font-size: 1.2em;
+        margin: .5em 0em;
+        font-size: .8em;
     }
 
     #offer-media-button{
@@ -1028,7 +1046,7 @@ gap: 2em;
     }
     
     .offer-content{
-        font-size: 1.5em;
+        font-size: 1.2em;
     }
 
     #offer-page #offer-container .offer-left-text{
@@ -1036,81 +1054,85 @@ gap: 2em;
     }
 
     .offer-left-text .offer-content .offer-text .small-font{
-        font-size: 1.2rem;
+        font-size: 1rem;
         margin-right: 0%;
     }
    .content-center .h1{
         width: 100%;
-      
+        padding-bottom: 2em;  
    }
 
    .content-center #flexbox-cta-container{
     width: 100%;
     }
-    
+
+    .content-center .flex-box{
+        justify-content: center;
+        gap: .5em;
+    }
     .content-center .flex-box .box-card{
-        height:13rem;
-        width: 15rem;
-        margin-top: .5em; 
+        height:9rem;
+        width: 9rem;
+        margin-top: .5em;   
     }
 
     #cta-page .cta-container{
-        width: 100%; 
+        width: 100%;
+        height: auto;
     }
 
     #cta-page{
         width: 100%;
-        padding: 1em;
+        height: auto;
       
     }
 
     .content-center .h1{
         width: 100%;
         margin: auto;
-        font-size: 1.5rem;
-        margin-top: 0.1em;
+        font-size: 1.3rem;
+        margin-top: 0.2em;
     }
 
     .content-center h5{
-            padding-top: 0%;
-            font-size: 1.2em;
+        padding-top: 5%;
+        font-size: 1.5em;
     }
 
     .content-center .flex-box .box-card p{
-        font-size: 1.4rem;
+        font-size: .8rem;
     }
 
     .footer-offer-page{
-        font-size: 1.2em;
+        font-size: .8em;
     } 
 
    .experience-container{
-    flex-direction: column;
-    width: 100%;
-    height: 100vh;
+        flex-direction: column;
+        width: 100%;
+        
+
    }
 
    #experience-page{
     width: 100%;
-    height: 80vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     }
 
     #experience-page .experience-container{
-        height: 100vh;
         padding: 0.5em 1em;
     }
 
     #experience-page .experience-container .experience-left-page{
         width: 100%;
-        height: 50vh;    
     }
 
     #experience-page .experience-container .experience-left-page .inner-experience-left-page{
         width: 70%;
-        height: 50vh;
+        height: 30vh;
     }
 
     #experience-page .experience-container .experience-left-page .inner-experience-left-page .inner-text{
@@ -1120,16 +1142,15 @@ gap: 2em;
 
     #experience-page .experience-container .experience-right-page{
         width: 100%;
-        height: 30vh;
+    
     }
-
     #experience-page .experience-rating #central-div{
         width: 100%;
         padding: 0em;
     }
 
     #experience-page .experience-rating #central-div .text-blue{
-        font-size: 2rem;
+        font-size: 1.5em;
     }
 
     #exp-media{
@@ -1141,7 +1162,7 @@ gap: 2em;
     }
 
     #exp-media-p{
-        font-size: 0.7em;
+        font-size: 0.5em;
     }
 
     .last-button{
@@ -1151,42 +1172,52 @@ gap: 2em;
 
     #customer-page{
         width: 100%;
-        height: 80vh;
+        height: auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        gap: 1em;
     }
     #customer-page .customer-comment-heading{
         padding: 0% 0%;
         width: 100%; 
+        font-size: 1em;
     }
     #customer-page #customer-comments{
         flex-direction: column;
-        width: 70%;
-        height: 100vh;
+        width: 80%;
+        height: auto;
+        gap: 1em;
     }
     .content{
-        height: 20vh;
-        font-size: 1.2em;
+        font-size: .8em;
     }
     .customer-details .name{
-        font-size: 2em;
+        font-size: 1em;
     }
     .customer-details .address{
-        font-size: 1.5em;
-        padding-top: .5em;
+        font-size: .8em;
+        padding-top: .2em;
+    }
+    
+    #slides{
+        display: none;
     }
 
-
+    .customer-nav{
+        width: 80%;
+        gap: em;
+        
+    }
 
     #faq{
-        height: 80vh;
-        padding: 2em;
+        height: auto;
+        padding: 1em
     }
     
     #faq .faq-container{
         width: 90%;
-        font-size: 1.3em;
+        font-size: 1.2em;
     }
 
     .faq-heading{
@@ -1196,47 +1227,52 @@ gap: 2em;
         font-size: 0.9em;
         margin-right: 10%;
     }
+
+    #footer{
+        height: auto;
+    }
     
-     .first-layer{
-        height: 60vh;
+    #footer #footer-contain{
         width: 100%;
-        padding: 2em;
+        padding: 1em;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 2em;
+        gap: 1em;
+        height: 40vh;
         
     } 
 
     #left-footer{
-    width: 100%;
-    text-align: center;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
     }
     
     .footer-text{
-        font-size: 1.5em;
+        font-size: 1em;
+        padding-top: 1em;
     }
     
     .footer-social-icons{
         margin: auto;
-        gap: 3em;
+        gap: 2em;
     }
     
     #right-footer{
         width: 100%;
-        height: 25vh;
         justify-content: center;
         align-items: left;
-        gap: 2em;
-        padding-right: 1em;
+        gap: 1em;
+ 
     }
     
     .right-footer-text{
-        font-size: 1.4em;
+        font-size: 1em;
     }
     
     .footer-small-font{
-        font-size: 0.8em;
+        font-size: 0.6em;
     }
     
     
@@ -1249,30 +1285,34 @@ gap: 2em;
     }
     
     .second-layer .second-layer-container{
-        width: 100%;
+        width: 90%;
         flex-direction: column;
         justify-content: center;
-        gap: 2em;
+        gap: 1em;
     }
     
     .footer-nav ul{
-        gap: 2em;
-        font-size: 1.5em;
+        gap: 1em;
+        font-size: 1.4em;
     }
     
-    #brands-page{
+    #brands-page .brands-inner-page{
         width: 100%;
-        height: 60vh;
+        height: auto;
     }
 
+    #brands-page{
+        height: auto;
+    }
 
 }
 
-@media screen and (min-width: 431px ) and (max-width: 885px) {
+/*  normal Tab view*/
+@media screen and (min-width: 481px ) and (max-width: 768px) {
     :root{
-        font-size: 18px;
+        font-size: 14px;
     }
-    
+
     nav ul{
         border: none; 
     }
@@ -1283,6 +1323,7 @@ gap: 2em;
     header{
         width: 100%;
         padding-bottom: 0.3em 0.2em;
+        position: static;
     
     }
         
@@ -1290,6 +1331,7 @@ gap: 2em;
         width: 100%;
         flex-direction: column;
         gap: 0.7em;
+        height: auto;
     }
 
     nav{
@@ -1311,13 +1353,14 @@ gap: 2em;
     
     .section-eighty-width{
         width: 100%;
-        height: 100vh;     
+        height: auto     
     }
+
     
     .section-eighty-width .section-container{
         width: 90%;
         flex-direction: column;
-        height: 100vh;
+        height:auto;
         justify-content: center;
         gap: 2em;
     }
@@ -1326,7 +1369,7 @@ gap: 2em;
         width: 100%;
         padding: 1em; 
         align-items: center;
-        height: 50vh;
+        height: auto;
     
     }
     .section-eighty-width .section-container .section-left .first-text{
@@ -1337,35 +1380,33 @@ gap: 2em;
     
     .button{
         width: 9em;
-        font-size: .9em;  
     }
     
     .last-text{
-        margin-top: 1em;
-        font-size: 2em;
+        margin-top: 1.5em;
     }
     
     .section-eighty-width .section-container .section-right{
         width: 100%;
-        height: 50vh;
         margin-top: 0;
             
     }
     .section-eighty-width .section-container .right-image{
         width: 90%;
-        height: 40vh;
-        margin: auto;   
+        margin: auto;
+        height: 50vh;   
     }   
 
     .service-button{
         width: 13rem;
-        top: 5%;     
+        top: 12%;     
     }
     
     .service-button .button-content{
-        padding: 1.2em 2em 1.2em 0.5em;
+        padding: 1em 0em;
         column-gap: 0.5em;
-        font-size: 1.2em;
+        font-size: 1em;
+        padding-right: 2em;
     }
     
     #twenty-four-hr{
@@ -1373,16 +1414,16 @@ gap: 2em;
        
     }
     .rating-button{
-        width: 17em;
+        width: 15em;
     }
     
     #star{
-        width: 0.7em;
+        width: 0.5em;
     }
     .rating-button .button-content{
         padding: 1em 1.5em;
         column-gap: .5em;
-        font-size: 1.5em;
+    
     }
  
     /* footer styling */
@@ -1416,6 +1457,10 @@ gap: 2em;
     
     }
 
+    .footer-text {
+        margin: auto;
+    }
+
     .footer-small-font{
         font-size: 0.9em;
         opacity: 0.6;
@@ -1423,6 +1468,7 @@ gap: 2em;
 
     .second-layer{
         font-size: 1em;
+        padding: 0em 2em;
     }
 
     .footer-logo{
@@ -1433,11 +1479,11 @@ gap: 2em;
         width: 100%;
         gap: 1em;;
         flex-direction: column;
-        padding: 1em;
+        padding: 1em ;
     }
 
     .footer-nav ul{
-        gap: 4em;
+        gap: 2em;
     }
 
     .footer-nav ul li a{
@@ -1448,23 +1494,25 @@ gap: 2em;
     #faq{
         background-color: var(--clr-steelgrey);
         width: 100%;
-        height: 100vh;
+        height: auto;
         display: flex;
         justify-content: center;
         align-items: center;
+        padding: 2em 0em;
     }
 
     #faq .faq-container{
         width: 90%;
-        font-size: 29px;
+        font-size: 1.5em;
+
       
     }
     .question-answer{
-        font-size: 0.8em;
+        font-size: .5em;
     }
     /* Customer page styling */
     #customer-page{
-        height: 90vh;
+        height: auto;
     }
 
     #customer-page .customer-comment-heading{
@@ -1475,9 +1523,10 @@ gap: 2em;
         flex-direction: column;
         justify-content: center;
         width: 80%;
-        height: 40vh;
+        height: auto;
         font-size: 1.2rem;
         line-height: 1.3em;
+        gap: .5em;
     }
     
     #customer-page #customer-comments .content .head{
@@ -1488,22 +1537,26 @@ gap: 2em;
         font-size: 0.9em;
     }
 
-    #slides{
-        padding-top: 2em;
-    }
-
     .customer-nav{
         width: 80%;
-        padding-top: 1em;
+        padding-top: .2em;
     }
 
+
     #brands-page{
-        height: 40vh;
-        padding: 0em 1.5em;
+        height: auto;
     }
     
     #brands-page .brand-text{
-        margin-top: 0;    
+        text-align: center;
+        
+        font-size: 1.5em;
+       
+    }
+    
+    #brands-page .first-brand-layer{
+        display: flex;
+        justify-content: center;
     }
     
     #experience-page .experience-rating{
@@ -1528,16 +1581,16 @@ gap: 2em;
 
         /* styling the fifth section(class=experience-page) */
     #experience-page{
-        height: 70vh;
+        height: auto;
     }
 
     #experience-page .experience-container{
-        height: 40vh;
+        height: auto;
         justify-content: space-between;
     }
 
     #experience-page .experience-container .experience-left-page{
-        height: 40vh;
+        height: 30vh;
     }
 
     #experience-page .experience-container .experience-left-page .inner-experience-left-page .inner-text{
@@ -1546,22 +1599,24 @@ gap: 2em;
     }
 
     #experience-page .experience-container .experience-right-page{
-        height: 40vh;}
+        height: 30vh;}
 
     #experience-page .experience-container .experience-left-page .inner-experience-left-page{
-        height: 40vh;
+        height: 30vh;
     }  
        
     /* Styling the fourth section(class=cta-page) */
     #cta-page{
         margin: auto;
-        height: 70vh;
+        height: auto;
         padding: 1em;
+
     }
 
     #cta-page .cta-container{
         width: 100%;
-        height: 100%;
+        height: ;
+        margin: auto;
     }
 
     .content-center .h1{
@@ -1580,6 +1635,33 @@ gap: 2em;
     .footer-offer-page{
         font-size: 0.9rem;
     }
+    
+    .content-center .flex-box{
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 0.1rem;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3%;
+        gap: .5em;
+    }
+
+    .content-center .flex-box .box-card{
+        height:10rem;
+        width: 10rem;
+        background-color: var(--clr-white);
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        padding: 5%;
+    }
+
+    .content-center #flexbox-cta-container{
+        width: 100%;
+    
+    }
+   
 
         /* styling the second section (id=qoute-page) */
     
@@ -1590,13 +1672,13 @@ gap: 2em;
     }
 
     #qoute-page{
-        height: 140vh;
+        height: auto;
     }
 
     #qoute-page .section-container{
         justify-content:space-between;
         align-items: center;
-        height: 140vh;
+        height: auto;
         gap: 1em;
         
     }
@@ -1606,7 +1688,7 @@ gap: 2em;
     }
 
     .section-left .flex-content{
-        margin: 5% 0% 0 0;
+        margin: 5% 0% 2% 0;
     }
 
     .flex-content-img{
@@ -1614,22 +1696,22 @@ gap: 2em;
     }   
 
     .light-font{
-        font-size: 1.7rem;  
+        font-size: 1.5rem;  
     }
 
     .left-align .p{
-        font-size: 1.3rem;
+        font-size: 1rem;
         font-weight: 0;
         line-height: 1.7rem;
     }
 
     .arrow{
-        margin: .8em 0 0 3.2em;
-        font-size: 1.2rem;
+        margin: .8em 0 0 4.2em;
+        font-size: .8rem;
     }
 
     #quote-media2{
-        height: 50%;
+        height: auto;
         text-align: center;
     }
 
@@ -1644,7 +1726,7 @@ gap: 2em;
     }
 
     #offer-page{
-        height: 110vh;
+        height: auto;
         width: 100%;
         margin: 0%;
         
@@ -1659,17 +1741,505 @@ gap: 2em;
     }
     
     #offer-page #offer-container .offer-left-text{
-        margin: 0em 0 0 0rem;
+        margin: 2em 0 0em 0rem;
        }
     #offer-media-h1{
         text-align: center;
         margin-right: 0%;
         padding-left: 0%;
         width: 100%;
+        padding: .7em;
     }
 
     .offer-left-text .offer-content{
         font-size: 1.8em;
+      
+    }
+    
+    .offer-left-text .offer-content .offer-text{
+        line-height: 1.5em;
+    }
+    
+    .offer-left-text .offer-content .offer-text .small-font{
+        line-height: 1.5em;
+        font-size: 1.5rem;
+        margin-right: 0%;
+    }
+    
+    .offer-left-text .offer-content .dots{
+        width: 1.9em;
+        padding-left: 1em;
+    }
+    
+    .line-width{
+        width: .08em;
+    }
+    
+    #offer-page #offer-container #offer-width {
+        width: 100%;
+        height: 100%;
+    }
+    
+    #offer-page #offer-container .offer-right .inner-offer-right{
+        width: 100%;
+        padding-top: 0%;
+        text-align: center;
+    }
+     
+    #offer-page #offer-container .offer-right .p{
+        font-size: 1.5rem;
+        margin: 3% 1%;
+    }
+
+}
+
+/* Bigger Tab view*/
+@media screen and (min-width: 769px ) and (max-width: 900px) {
+    :root{
+        font-size: 20px;
+    }
+
+    nav ul{
+        border: none; 
+    }
+    .header-contact{
+        column-gap: 0.7em;     
+    }
+    
+    header{
+        width: 100%;
+        padding-bottom: 0.3em 0.2em;
+        position: static;
+    
+    }
+        
+    .header-div{
+        width: 100%;
+        flex-direction: column;
+        gap: 0.7em;
+        height: auto;
+    }
+
+    nav{
+        column-gap: .5em;
+        font-size: 1.2em;   
+    }
+    
+    nav ul{
+        column-gap: 1.2em; 
+    }
+        
+    .header-text{
+        font-size: 1em
+        }
+    
+    .header-icon{
+        width: 1.2em;
+    }
+    
+    .section-eighty-width{
+        width: 100%;
+        height: auto     
+    }
+
+    
+    .section-eighty-width .section-container{
+        width: 90%;
+        flex-direction: column;
+        height:auto;
+        justify-content: center;
+        gap: 2em;
+    }
+    
+    .section-eighty-width .section-container .section-left{
+        width: 100%;
+        padding: 1em; 
+        align-items: center;
+        height: auto;
+    
+    }
+    .section-eighty-width .section-container .section-left .first-text{
+        padding-top: 0%;
+        font-size: 1.8em;
+        text-align: center;
+    }
+    
+    .button{
+        width: 9em;
+    }
+    
+    .last-text{
+        margin-top: 1.5em;
+    }
+    
+    .section-eighty-width .section-container .section-right{
+        width: 100%;
+        margin-top: 0;
+            
+    }
+    .section-eighty-width .section-container .right-image{
+        width: 90%;
+        margin: auto;
+        height: 50vh;   
+    }   
+
+    .service-button{
+        width: 13rem;
+        top: 12%;     
+    }
+    
+    .service-button .button-content{
+        padding: 1em 0em;
+        column-gap: 0.5em;
+        font-size: 1em;
+        padding-right: 2em;
+    }
+    
+    #twenty-four-hr{
+        width: 3em;
+       
+    }
+    .rating-button{
+        width: 15em;
+    }
+    
+    #star{
+        width: 0.5em;
+    }
+    .rating-button .button-content{
+        padding: 1em 1.5em;
+        column-gap: .5em;
+    
+    }
+ 
+    /* footer styling */
+        .first-layer{
+        display: flex;
+        height: 60vh;
+        width: 100%;
+        padding: 0em 1em;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: auto;
+        
+    } 
+    
+    #left-footer{
+        padding-top: 1em;
+        width: 100%;
+        text-align: center;
+        height: 30vh;
+    }
+
+    .footer-social-icons{
+        gap: 4em;
+        margin: auto;
+    }
+
+    #right-footer{
+        width: 100%;
+        height: 30vh;
+    
+    }
+
+    .footer-text {
+        margin: auto;
+    }
+
+    .footer-small-font{
+        font-size: 0.9em;
+        opacity: 0.6;
+    }
+
+    .second-layer{
+        font-size: 1em;
+        padding: 0em 2em;
+    }
+
+    .footer-logo{
+        font-size: .7em;
+    }
+
+    .second-layer .second-layer-container{
+        width: 100%;
+        gap: 1em;;
+        flex-direction: column;
+        padding: 1em ;
+    }
+
+    .footer-nav ul{
+        gap: 2em;
+    }
+
+    .footer-nav ul li a{
+        font-size: 1.5em;
+    }
+
+        /* styling FQA section */
+    #faq{
+        background-color: var(--clr-steelgrey);
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2em 0em;
+    }
+
+    #faq .faq-container{
+        width: 90%;
+        font-size: 1.5em;
+
+      
+    }
+    .question-answer{
+        font-size: .5em;
+    }
+    /* Customer page styling */
+    #customer-page{
+        height: auto;
+    }
+
+    #customer-page .customer-comment-heading{
+        width: 100%;
+    }
+
+    #customer-page #customer-comments{
+        flex-direction: column;
+        justify-content: center;
+        width: 80%;
+        height: auto;
+        font-size: 1.2rem;
+        line-height: 1.3em;
+        gap: .5em;
+    }
+    
+    #customer-page #customer-comments .content .head{
+        font-size: 1.3rem;  
+    }
+
+    .address{
+        font-size: 0.9em;
+    }
+
+    .customer-nav{
+        width: 80%;
+        padding-top: .2em;
+    }
+
+
+    #brands-page{
+        height: auto;
+    }
+    
+    #brands-page .brand-text{
+        text-align: center;
+        
+        font-size: 1.5em;
+       
+    }
+    
+    #brands-page .first-brand-layer{
+        display: flex;
+        justify-content: center;
+    }
+    
+    #experience-page .experience-rating{
+        padding: 0em 1em;
+    }
+    
+    #experience-page .experience-rating #central-div{
+        width: 100%;
+        gap: 2em;
+    }
+    
+    #exp-media{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #exp-media-p{
+        font-size: .9em;
+    }
+
+        /* styling the fifth section(class=experience-page) */
+    #experience-page{
+        height: auto;
+    }
+
+    #experience-page .experience-container{
+        height: auto;
+        justify-content: space-between;
+    }
+
+    #experience-page .experience-container .experience-left-page{
+        height: 30vh;
+    }
+
+    #experience-page .experience-container .experience-left-page .inner-experience-left-page .inner-text{
+        font-size: .9rem;
+        margin-right: 2%;
+    }
+
+    #experience-page .experience-container .experience-right-page{
+        height: 30vh;}
+
+    #experience-page .experience-container .experience-left-page .inner-experience-left-page{
+        height: 30vh;
+    }  
+       
+    /* Styling the fourth section(class=cta-page) */
+    #cta-page{
+        margin: auto;
+        height: auto;
+        padding: 1em;
+
+    }
+
+    #cta-page .cta-container{
+        width: 100%;
+        height: ;
+        margin: auto;
+    }
+
+    .content-center .h1{
+        width: 70%;
+    }
+
+    .content-center h5{
+        padding-top: 2%;
+        font-size: 1.1em;
+    }
+
+    .content-center .flex-box .box-card p{
+        font-size: 1rem;
+    }
+
+    .footer-offer-page{
+        font-size: 0.9rem;
+    }
+    
+    .content-center .flex-box{
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 0.1rem;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3%;
+        gap: .5em;
+    }
+
+    .content-center .flex-box .box-card{
+        height:10rem;
+        width: 10rem;
+        background-color: var(--clr-white);
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        padding: 5%;
+    }
+
+    .content-center #flexbox-cta-container{
+        width: 100%;
+    
+    }
+   
+
+        /* styling the second section (id=qoute-page) */
+    
+    #quote-media h2{
+        text-align: center;
+        padding-top: .5em;
+        font-size: 2.5em;
+    }
+
+    #qoute-page{
+        height: auto;
+    }
+
+    #qoute-page .section-container{
+        justify-content:space-between;
+        align-items: center;
+        height: auto;
+        gap: 1em;
+        
+    }
+
+    #quote-media{
+        height: 50%
+    }
+
+    .section-left .flex-content{
+        margin: 5% 0% 2% 0;
+    }
+
+    .flex-content-img{
+        width: 2.5em;
+    }   
+
+    .light-font{
+        font-size: 1.5rem;  
+    }
+
+    .left-align .p{
+        font-size: 1rem;
+        font-weight: 0;
+        line-height: 1.7rem;
+    }
+
+    .arrow{
+        margin: .8em 0 0 4.2em;
+        font-size: .8rem;
+    }
+
+    #quote-media2{
+        height: auto;
+        text-align: center;
+    }
+
+    .section-eighty-width .section-container .section-right h1{
+        font-size: 2.7rem;
+        padding-top: 1rem;
+    }
+
+    .section-eighty-width .section-container .section-right input{
+        width: 100%;
+        font-size: 2em;
+    }
+
+    #offer-page{
+        height: auto;
+        width: 100%;
+        margin: 0%;
+        
+    }
+    #offer-page #offer-container{
+        width: 90%;
+        align-items: center;
+    }
+
+    #offer-media-width{
+        margin-right: 0%;
+    }
+    
+    #offer-page #offer-container .offer-left-text{
+        margin: 2em 0 0em 0rem;
+       }
+    #offer-media-h1{
+        text-align: center;
+        margin-right: 0%;
+        padding-left: 0%;
+        width: 100%;
+        padding: .7em;
+    }
+
+    .offer-left-text .offer-content{
+        font-size: 1.8em;
+      
     }
     
     .offer-left-text .offer-content .offer-text{
