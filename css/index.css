@@ -17,7 +17,7 @@
     --clr-whitee:#FAFAFA;
     
     font-family: Manrope;
-    font-size: 16px;
+    font-size: 19px;
 }
 
 /* Styling the header */
@@ -580,6 +580,8 @@ form{
     align-items: center;
     display: flex;
     background-color: #FAFAFA;
+    padding: 0em 3em;
+    margin: auto;
 }
 
 #brands-page .brand-text{
@@ -591,7 +593,13 @@ form{
 
 #brands-page .first-brand-layer{
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+#logo-size{
+    width: 15em;
 }
 
 /* Customer page styling */
@@ -744,12 +752,12 @@ footer{
 }
 
 #left-footer{
-width: 50%;
-height: 60vh;
-flex-direction: column;
-justify-content: center;
-align-items: flex-start;
-gap: 2em;
+    width: 50%;
+    height: 60vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2em;
 }
 
 .footer-text{
@@ -1071,14 +1079,17 @@ gap: 2em;
         gap: .5em;
     }
     .content-center .flex-box .box-card{
-        height:9rem;
-        width: 9rem;
+        height:16rem;
+        width: 16rem;
         margin-top: .5em;   
     }
 
     #cta-page .cta-container{
-        width: 100%;
+        width: 90%;
         height: auto;
+    }
+    .content-center .flex-box .box-card p{
+        font-size: 1.3rem;
     }
 
     #cta-page{
@@ -1099,9 +1110,6 @@ gap: 2em;
         font-size: 1.5em;
     }
 
-    .content-center .flex-box .box-card p{
-        font-size: .8rem;
-    }
 
     .footer-offer-page{
         font-size: .8em;
@@ -1310,7 +1318,7 @@ gap: 2em;
 /*  normal Tab view*/
 @media screen and (min-width: 481px ) and (max-width: 768px) {
     :root{
-        font-size: 14px;
+        font-size: 13px;
     }
 
     nav ul{
@@ -1332,6 +1340,7 @@ gap: 2em;
         flex-direction: column;
         gap: 0.7em;
         height: auto;
+        padding: 0em 2em;
     }
 
     nav{
@@ -1340,15 +1349,16 @@ gap: 2em;
     }
     
     nav ul{
-        column-gap: 1.2em; 
+        column-gap: 2em; 
     }
         
     .header-text{
-        font-size: 1em
+        font-size: .8em
         }
     
     .header-icon{
         width: 1.2em;
+        display: none;
     }
     
     .section-eighty-width{
@@ -1374,7 +1384,7 @@ gap: 2em;
     }
     .section-eighty-width .section-container .section-left .first-text{
         padding-top: 0%;
-        font-size: 1.8em;
+        font-size: 2em;
         text-align: center;
     }
     
@@ -1405,7 +1415,7 @@ gap: 2em;
     .service-button .button-content{
         padding: 1em 0em;
         column-gap: 0.5em;
-        font-size: 1em;
+        font-size: .8em;
         padding-right: 2em;
     }
     
@@ -1421,29 +1431,51 @@ gap: 2em;
         width: 0.5em;
     }
     .rating-button .button-content{
-        padding: 1em 1.5em;
+        padding: .5em 1em;
         column-gap: .5em;
     
     }
  
     /* footer styling */
+
+    #footer{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 4em;
+        padding: 2em 0em 0em 0em;
+    }
+
+    #footer-contain{
+        /* height: auto; */
+        padding: 2em 0em;
+    }
         .first-layer{
         display: flex;
-        height: 60vh;
         width: 100%;
         padding: 0em 1em;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         margin: auto;
-        
+        gap: 2em;
+        padding: em 0em;
     } 
+
+    #stress{
+
+    }
     
     #left-footer{
         padding-top: 1em;
-        width: 100%;
+        width: 80%;
         text-align: center;
-        height: 30vh;
+        /* height: 40vh; */
+    }
+
+    .eighty-width .section-container .section-left{
+        height: ;
     }
 
     .footer-social-icons{
@@ -1453,7 +1485,7 @@ gap: 2em;
 
     #right-footer{
         width: 100%;
-        height: 30vh;
+        /* height: 40vh; */
     
     }
 
@@ -1477,9 +1509,10 @@ gap: 2em;
 
     .second-layer .second-layer-container{
         width: 100%;
-        gap: 1em;;
+        gap: 1em;
         flex-direction: column;
-        padding: 1em ;
+        padding-bottom: 1em ;
+       
     }
 
     .footer-nav ul{
@@ -1516,7 +1549,7 @@ gap: 2em;
     }
 
     #customer-page .customer-comment-heading{
-        width: 100%;
+        width: 80%;
     }
 
     #customer-page #customer-comments{
@@ -1548,15 +1581,18 @@ gap: 2em;
     }
     
     #brands-page .brand-text{
-        text-align: center;
-        
+        text-align: center;  
         font-size: 1.5em;
        
     }
+
+    #logo-size{
+        width: 13em;
+    }
     
     #brands-page .first-brand-layer{
-        display: flex;
-        justify-content: center;
+        width: 80%;
+        margin: auto;
     }
     
     #experience-page .experience-rating{
@@ -1584,13 +1620,17 @@ gap: 2em;
         height: auto;
     }
 
+    #exp-media-p{
+        font-size: .7em;
+    }
+
     #experience-page .experience-container{
         height: auto;
         justify-content: space-between;
     }
 
     #experience-page .experience-container .experience-left-page{
-        height: 30vh;
+        height: 50vh;
     }
 
     #experience-page .experience-container .experience-left-page .inner-experience-left-page .inner-text{
@@ -1599,10 +1639,10 @@ gap: 2em;
     }
 
     #experience-page .experience-container .experience-right-page{
-        height: 30vh;}
+        height: 50vh;}
 
     #experience-page .experience-container .experience-left-page .inner-experience-left-page{
-        height: 30vh;
+        height: 50vh;
     }  
        
     /* Styling the fourth section(class=cta-page) */
@@ -1614,8 +1654,7 @@ gap: 2em;
     }
 
     #cta-page .cta-container{
-        width: 100%;
-        height: ;
+        width: 90%;
         margin: auto;
     }
 
@@ -1629,7 +1668,7 @@ gap: 2em;
     }
 
     .content-center .flex-box .box-card p{
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
     .footer-offer-page{
@@ -1648,8 +1687,8 @@ gap: 2em;
     }
 
     .content-center .flex-box .box-card{
-        height:10rem;
-        width: 10rem;
+        height:14rem;
+        width: 14rem;
         background-color: var(--clr-white);
         justify-content: center;
         align-items: center;
@@ -1660,6 +1699,10 @@ gap: 2em;
     .content-center #flexbox-cta-container{
         width: 100%;
     
+    }
+
+    .footer-offer-page{
+        width: 90%;
     }
    
 
@@ -1791,12 +1834,16 @@ gap: 2em;
         margin: 3% 1%;
     }
 
+
+    #offer-width{
+        padding-bottom: 2em;
+    }
 }
 
 /* Bigger Tab view*/
-@media screen and (min-width: 769px ) and (max-width: 900px) {
+@media screen and (min-width: 769px ) and (max-width: 1040px) {
     :root{
-        font-size: 20px;
+        font-size: 18px;
     }
 
     nav ul{
@@ -1860,8 +1907,11 @@ gap: 2em;
     }
     .section-eighty-width .section-container .section-left .first-text{
         padding-top: 0%;
-        font-size: 1.8em;
+   
         text-align: center;
+    }
+    #ease{
+        /* font-size: 5px; */
     }
     
     .button{
@@ -1880,7 +1930,7 @@ gap: 2em;
     .section-eighty-width .section-container .right-image{
         width: 90%;
         margin: auto;
-        height: 50vh;   
+        height: 80vh;   
     }   
 
     .service-button{
@@ -1913,23 +1963,45 @@ gap: 2em;
     }
  
     /* footer styling */
+    #footer{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 4em;
+        padding: 2em 0em 0em 0em;
+        font-size: 14px;
+    }
+
+    #footer-contain{
+        /* height: auto; */
+        padding: 2em 0em;
+    }
         .first-layer{
         display: flex;
-        height: 60vh;
         width: 100%;
         padding: 0em 1em;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         margin: auto;
-        
+        gap: 2em;
+        padding: em 0em;
     } 
+
+    #stress{
+
+    }
     
     #left-footer{
         padding-top: 1em;
-        width: 100%;
+        width: 90%;
         text-align: center;
-        height: 30vh;
+        /* height: 40vh; */
+    }
+
+    .eighty-width .section-container .section-left{
+        height: ;
     }
 
     .footer-social-icons{
@@ -1939,12 +2011,13 @@ gap: 2em;
 
     #right-footer{
         width: 100%;
-        height: 30vh;
+        /* height: 40vh; */
     
     }
 
     .footer-text {
         margin: auto;
+
     }
 
     .footer-small-font{
@@ -1963,9 +2036,10 @@ gap: 2em;
 
     .second-layer .second-layer-container{
         width: 100%;
-        gap: 1em;;
+        gap: 1em;
         flex-direction: column;
-        padding: 1em ;
+        padding-bottom: 1em ;
+       
     }
 
     .footer-nav ul{
@@ -2031,6 +2105,7 @@ gap: 2em;
 
     #brands-page{
         height: auto;
+        padding:  0em 2em;
     }
     
     #brands-page .brand-text{
@@ -2039,10 +2114,8 @@ gap: 2em;
         font-size: 1.5em;
        
     }
-    
-    #brands-page .first-brand-layer{
-        display: flex;
-        justify-content: center;
+    #logo-size{
+        width: 11em;
     }
     
     #experience-page .experience-rating{
@@ -2076,7 +2149,7 @@ gap: 2em;
     }
 
     #experience-page .experience-container .experience-left-page{
-        height: 30vh;
+        height: 50vh;
     }
 
     #experience-page .experience-container .experience-left-page .inner-experience-left-page .inner-text{
@@ -2085,10 +2158,10 @@ gap: 2em;
     }
 
     #experience-page .experience-container .experience-right-page{
-        height: 30vh;}
+        height: 50vh;}
 
     #experience-page .experience-container .experience-left-page .inner-experience-left-page{
-        height: 30vh;
+        height: 50vh;
     }  
        
     /* Styling the fourth section(class=cta-page) */
@@ -2099,12 +2172,14 @@ gap: 2em;
 
     }
 
-    #cta-page .cta-container{
-        width: 100%;
-        height: ;
-        margin: auto;
-    }
 
+    #cta-page .cta-container{
+        width: 90%;
+        height: auto;
+    }
+    .content-center .flex-box .box-card p{
+        font-size: 1rem;
+    }
     .content-center .h1{
         width: 70%;
     }
@@ -2114,9 +2189,7 @@ gap: 2em;
         font-size: 1.1em;
     }
 
-    .content-center .flex-box .box-card p{
-        font-size: 1rem;
-    }
+    
 
     .footer-offer-page{
         font-size: 0.9rem;
@@ -2134,8 +2207,8 @@ gap: 2em;
     }
 
     .content-center .flex-box .box-card{
-        height:10rem;
-        width: 10rem;
+        height:12rem;
+        width: 12rem;
         background-color: var(--clr-white);
         justify-content: center;
         align-items: center;
@@ -2148,13 +2221,18 @@ gap: 2em;
     
     }
    
-
+    .footer-offer-page{
+        width: 90%;
+    }
         /* styling the second section (id=qoute-page) */
     
     #quote-media h2{
         text-align: center;
         padding-top: .5em;
         font-size: 2.5em;
+    }
+    #quote-media2{
+        padding-bottom: 2em;
     }
 
     #qoute-page{
@@ -2275,6 +2353,10 @@ gap: 2em;
     #offer-page #offer-container .offer-right .p{
         font-size: 1.5rem;
         margin: 3% 1%;
+    }
+
+    #offer-width{
+        padding-bottom: 2em;
     }
 
 }
