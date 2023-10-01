@@ -2380,6 +2380,7 @@ footer{
         width: 100%;
         padding-bottom: 0.3em 0.2em;
         position: static;
+        font-size: 14px;
     
     }
         
@@ -2881,7 +2882,7 @@ footer{
 /* bigger pc view*/
 @media screen and (min-width: 1351px ) and (max-width: 1450px){
     :root{
-        font-size: 20px;
+        font-size: 16px;
     }
 
     nav ul{
