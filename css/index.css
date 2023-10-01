@@ -576,7 +576,7 @@ form{
 
 #brands-page{
     width: 100%;
-    height: 60vh;
+    height: 80vh;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -2111,7 +2111,6 @@ footer{
     
     #brands-page .brand-text{
         text-align: center;
-        
         font-size: 1.5em;
        
     }
@@ -2360,4 +2359,5 @@ footer{
         padding-bottom: 2em;
     }
 
+    
 }
