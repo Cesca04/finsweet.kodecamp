@@ -1307,7 +1307,7 @@ footer{
     
     #brands-page .brands-inner-page{
         width: 100%;
-        height: auto;
+        
     }
 
     #brands-page{
@@ -1842,7 +1842,7 @@ footer{
 }
 
 /* Bigger Tab view*/
-@media screen and (min-width: 769px ) and (max-width: 1040px) {
+@media screen and (min-width: 769px ) and (max-width: 1075px) {
     :root{
         font-size: 18px;
     }
