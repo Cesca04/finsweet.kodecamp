@@ -106,10 +106,12 @@ nav ul li:hover, .header-text #p:hover{
     width: 80%;
     height: 80%;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .section-eighty-width .section-container .section-left{
-    width: 50%;
+    /* width: 50%; */
     height: 80vh;
     display: flex;
     flex-direction: column;
@@ -336,7 +338,7 @@ form{
 }
 
 #offer-page #offer-container .offer-left-text{
-    margin: 1.69em 0 0 5rem;
+    margin: 1em 0 0 5rem;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -357,7 +359,6 @@ form{
 .offer-left-text .offer-content .offer-text .small-font{
     text-align: left;
     font-size: 0.7rem;
-    margin-right: 45%;
     opacity: 0.4;
 }
 
